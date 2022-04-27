@@ -70,7 +70,7 @@ Given that you tagged the image correctly when building, you should be able to j
 $ podman login <myAHurl>
 $ podman push <myAHurl>/ee-ansible-azure
 ```
-If you run a demo env without valid certificat, add "--tls-verify=false" to the podman statements.
+If you run a demo env without valid certificate, add "--tls-verify=false" to the podman statements.
 
 
 
