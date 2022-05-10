@@ -1,6 +1,6 @@
 # Ansible Execution Enviroment with Azure Collection
 
-Credit: Original HowTo written by Richard Henshall.
+Credit: Original HowTo written by Peter Gustafsson.
 
 The certified Ansible Azure Collection (https://github.com/ansible-collections/azure) has quite a few Python module dependencies, but that is easy to solve in Ansible Automation Platform 2.x with an Execution Environment (aka container template) that include these.
 
