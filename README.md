@@ -20,7 +20,7 @@ Install ansible / ansible-builder: (for use of Red Hat supported, refer to Ansib
 ```
 $ pip install ansible
 $ pip install ansible-builder
-$ ansible-version
+$ ansible --version
 ansible [core 2.12.1]
 ```
 For required build files, clone this repository and needed files to root in build environment.
