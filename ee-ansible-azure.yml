@@ -5,16 +5,19 @@ images:
   base_image:
     name: registry.redhat.io/ansible-automation-platform-24/ee-minimal-rhel9:latest
 
+options:
+  package_manager_path: /usr/bin/microdnf
+
 dependencies:
   galaxy: requirements.yml
   python: requirements.txt
   system: bindep.txt
 
 additional_build_steps:
-  prepend: |
-    RUN pip3 install --upgrade pip setuptools
-    RUN whoami
-    RUN cat /etc/os-release
+  prepend_galaxy:
+    - RUN pip3 install --upgrade pip setuptools
+    - RUN whoami
+    - RUN cat /etc/os-release
 
-  append:
+  append_galaxy:
     - RUN echo Build done!
