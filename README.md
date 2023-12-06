@@ -2,7 +2,7 @@
 
 Credit: Original HowTo written by Peter Gustafsson / Richard Henshall.
 
-#### ee_ansible_azure.yml build file updated to version 3 - Compatible with AAP 2.4. In example RHEL9 minimal is used.
+#### ee_ansible_azure.yml build file updated to version 3. Change image from RHEL9 to RHEL8 as desired
 
 The certified Ansible Azure Collection (https://github.com/ansible-collections/azure) has quite a few Python module dependencies, but that is easy to solve in Ansible Automation Platform 2.x with an Execution Environment (aka container template) that include these.
 
@@ -23,7 +23,7 @@ Install ansible / ansible-builder: (for use of Red Hat supported, refer to Ansib
 $ pip install ansible
 $ pip install ansible-builder
 $ ansible --version
-ansible [core 2.16]
+ansible [core 2.16.0]
 ...
 ```
 For required build files, clone this repository and needed files to root in build environment.
