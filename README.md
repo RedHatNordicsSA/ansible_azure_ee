@@ -2,7 +2,7 @@
 
 Credit: Original HowTo written by Peter Gustafsson / Richard Henshall.
 
-### ee_ansible_azure.yml build file updated to version 3 - Compatible with AAP 2.4. In example RHEL9 minimal is used.
+#### ee_ansible_azure.yml build file updated to version 3 - Compatible with AAP 2.4. In example RHEL9 minimal is used.
 
 The certified Ansible Azure Collection (https://github.com/ansible-collections/azure) has quite a few Python module dependencies, but that is easy to solve in Ansible Automation Platform 2.x with an Execution Environment (aka container template) that include these.
 
